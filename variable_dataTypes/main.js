@@ -1,14 +1,14 @@
 // Variable examples in JavaScript
-let name = "Alice";
+let firstName = "Alice";
 const age = 30;
 var city = "New York";
 
-console.log(name);
+console.log(firstName);
 console.log(age);
 console.log(city);
 
-name = "Bob";
-console.log(name);
+let lastName = "Smith";
+console.log(lastName);
 
 // const cannot be reassigned
 // age = 31; // This would throw an error
