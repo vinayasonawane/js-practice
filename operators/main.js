@@ -13,8 +13,8 @@ console.log("Addition: " + (a + b)); // Addition
 console.log("Subtraction: " + (a - b)); // Subtraction
 console.log("Multiplication: " + a * b); // Multiplication
 console.log("Division: " + a / b); // Division
-console.log("Modulus: " + (a % b)); // Modulus
-console.log("Exponentiation: " + a ** b); // Exponentiation
+console.log("Modulus: " + (a % b)); // Modulus - बाकी (Remainder)
+console.log("Exponentiation: " + a ** b); // Exponentiation - घातांक / Power
 
 // unary operators
 console.log("Increment: " + ++a); //pre-increment
