@@ -16,10 +16,6 @@ console.log(sentence);
 // we can access other variable / Object key in it with simple syntax ${put object key / any variable} i.e. placeholder
 // string interpolation - insert ${value/var} into string
 
-// Escape characters - special characters in JavaScript
-// \n - start from new line
-// \t - add tab space
-// \"" , \', \\ - show double quote, single quote, back-slash etc.
 console.log("Print me \n in the next line");
 console.log("Print me \t and add tab");
 

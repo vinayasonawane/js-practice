@@ -25,3 +25,81 @@ Map ✅
 | **filter()**   | Find all matches       | **Multiple**      | `[5,12,18] → filter(x=>x>10) → [12,18]` |
 | **map()**      | Transform every item   | **Multiple**      | `[1,2,3] → map(x=>x*2) → [2,4,6]`       |
 | **reduce()**   | Combine into one value | **Single**        | `[1,2,3] → reduce((a,b)=>a+b) → 6`      |
+
+Functions:
+
+|                             | Function Declaration | Function Expression             |
+| --------------------------- | -------------------- | ------------------------------- |
+| Syntax                      | `function add() {}`  | `const add = function() {}`     |
+| Stored in variable?         | ❌ No                | ✅ Yes                          |
+| Can call before definition? | ✅ Yes               | ❌ No                           |
+| Hoisting                    | Function is hoisted  | Function assignment isn't       |
+| Common use                  | General functions    | Callbacks / assigning functions |
+
+function declaration:
+function add() {}
+function expression: "Put this function inside this variable."
+const add = function() {};
+arrow function:
+const add = (a, b) => a + b;
+
+function parameters are local variables , block scoped
+
+callback function - it is a function, passed as argument in another function.
+higher order functions - Takes another function as an argument or Returns another function.
+
+let prices = [100, 200, 300];
+
+prices.forEach((price) => {
+console.log(price \* 0.9);
+});
+forEach() = Higher-order function
+() => { ... } = Callback function
+
+==========================
+
+higher order vs callback function ---
+function sum(calc){
+calc()
+}
+sum(anotherFun)
+
+sum() → Higher-order function, because it accepts another function as an argument.
+calc → The parameter that receives the callback function.
+anotherFun → The callback function being passed to sum().
+
+==========================
+A function's .length counts parameters only up to the first parameter with a default value.
+
+function abc(a, b,c){
+}
+function pqr(a=0, b,c){
+}
+console.log(abc.length, pqr.length)
+
+The output is 3, 0.
+a = 0 → has a default value, so counting stops immediately.
+
+if --
+function x(a, b, c = 0) {}
+length will be 2
+==========================
+Escape characters - special characters in JavaScript
+\n - start from new line
+\t - add tab space
+\"" , \', \\ - show double quote, single quote, back-slash etc.
+
+==========================
+constructor - start with caps letter, it's a special function in js
+
+different function syntax:
+Regular function function: hello() {}
+Short callback or array operation: () => {}
+Object method: hello() {}
+Class method: hello() {}
+Initialize a class object: constructor() {}
+Constructor function: function FunctionName(){}
+
+** use of super
+If a child class extends a parent class and defines its own constructor, call super() first. You can pass arguments to it, such as super(name), to initialize the parent's properties.
+**
