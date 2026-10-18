@@ -103,3 +103,51 @@ Constructor function: function FunctionName(){}
 ** use of super
 If a child class extends a parent class and defines its own constructor, call super() first. You can pass arguments to it, such as super(name), to initialize the parent's properties.
 **
+
+====================
+try catch real-world uses:
+
+1. Fetching API data
+   try {
+   const response = await fetch("/api/users");
+   if (!response.ok) throw new Error("Request failed");
+   } catch (err) {
+   console.log("Unable to load users");
+   }
+
+2. Converting JSON
+   try {
+   const data = JSON.parse('{"name":}');
+   } catch (err) {
+   console.log("Invalid JSON data");
+   }
+
+3. Handling unexpected input
+   try {
+   const result = JSON.parse(userInput);
+   console.log(result);
+   } catch (err) {
+   console.log("Please enter valid JSON");
+   }
+
+================
+Promise: Represents the future success or failure of an asynchronous operation.
+
+async: Declares a function that returns a Promise.
+
+await: Waits for a Promise's result inside an async function without blocking the whole application.
+
+# try/catch: Handles errors when using async/await.
+
+====================
+A Promise is a JavaScript object that represents the eventual success or failure of an asynchronous operation.
+
+resolve and reject are callback functions provided to the Promise executor; they are not JavaScript keywords.
+
+async/await is syntax that makes working with Promises easier to read and write.
+async → makes the function return a Promise.
+await → waits for a Promise to settle before continuing the async function.
+
+\*\*\*\* We use await when we need to wait for one asynchronous operation before continuing with the next step.
+
+\*\*\* we use async/await - it makes asynchronous code easier to read and helps avoid deeply nested callbacks.

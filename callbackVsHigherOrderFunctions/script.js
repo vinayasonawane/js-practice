@@ -3,10 +3,11 @@ function greet() {
 }
 
 function execute(callback) {
+  // callback - parameter name, pass any function to it.
   callback();
 }
 
-execute(greet);
+execute(greet); //pass fn greet
 
 /*
 greet() is the callback function because we pass it to another function.
@@ -14,7 +15,7 @@ execute() is the higher-order function because it accepts a function as an argum
 callback is the parameter that receives greet.
 */
 
-// 1. Callback function: The function you pass to another function.
+// 1. Callback function: The function you pass to another function as an argument.
 // 2. Higher-order function: The function that receives another function as an argument or returns a function as a result.
 
 // Callback = the task you give.
