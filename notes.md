@@ -151,3 +151,12 @@ await → waits for a Promise to settle before continuing the async function.
 \*\*\*\* We use await when we need to wait for one asynchronous operation before continuing with the next step.
 
 \*\*\* we use async/await - it makes asynchronous code easier to read and helps avoid deeply nested callbacks.
+
+=============
+rest vs spread operator
+Rest = Collect multiple values.
+Spread = Expand values.
+
+spread - Used in expressions (Array/Object literals, Function calls).
+rest - Used in definitions (Function parameters, Destructuring assignments).
+===========
